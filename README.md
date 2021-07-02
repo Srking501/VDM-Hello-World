@@ -25,7 +25,7 @@ This should return `false`.
 **NOTE: You could also run Combinatorial Testing to run both commands at once which will be a whole new tab with a sign of "CT" provided by the VDM VSCode extension**
 
 ## Contributing
-Pull requests to improve it are welcome. This is intended to help me to remember the structure of VDM-SL, and hopefully helps you to know/remember the structure too.
+Pull requests to improve it are welcome. This is intended to help me remember the structure of VDM-SL, and hopefully helps you know/remember the structure too.
 
 ## License
 * Author: [Abdullah Alshadadi](https://github.com/Srking501)
