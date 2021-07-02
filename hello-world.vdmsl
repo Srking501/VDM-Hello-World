@@ -1,0 +1,41 @@
+-- Hello World in VDM-SL
+-- By Abdullah Turki Alshadadi
+--
+-- R1 Make a program to check if a string equals
+-- to "Hello World"
+
+module hello_world
+exports all
+definitions
+types
+	-- Where the string will be stored
+	String = seq of char
+    inv s == (len s = 11); -- invariant used here to enforce the seq of 11 chars
+
+functions
+  	-- Checks if they are equal
+	EqToHello: String -> bool
+	EqToHello(s) ==
+		s = HELLO_WORLD
+		post (s = HELLO_WORLD) = true;
+
+values
+	-- Default String of "Hello World"
+	HELLO_WORLD: seq of char = "Hello World";
+
+	-- Values of String to passed on the function
+	s1 : String = "Hello World";
+	s2 : String = "sdnsasudnsa";
+
+operations
+	-- Runs the test
+	RunHello: String ==> bool
+	RunHello(s) == 
+			return EqToHello(s); 
+
+traces
+	-- Combinatorial Testing for Strings to "Hello World"
+	HelloSuccess: EqToHello(s1)
+	HelloFailure: EqToHello(s2)
+
+end hello_world
