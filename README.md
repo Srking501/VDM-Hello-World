@@ -29,3 +29,5 @@ Pull requests to improve it are welcome. This is intended to help me remember th
 
 ## License
 * Author: [Abdullah Alshadadi](https://github.com/Srking501)
+
+* [MIT License](LICENSE.md)
